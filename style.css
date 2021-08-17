@@ -618,11 +618,11 @@ button {
 }
 
 .first-card {
-  width: 600px;
-  height: 350px;
+  width: 750px;
+  height: 450px;
 }
 .text {
-  font-size: .6rem;
+  font-size: .8rem;
 }
 
 .card1, .card2, .card3, .card4 {
