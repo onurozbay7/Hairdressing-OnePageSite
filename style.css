@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+
+}
+
+body {
+
+}
+
+.hamburger{
+  visibility: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  padding-top: 10px;
+  z-index: 1000;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.navbar-list a{
+
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+a::selection, p::selection, h1::selection, h2::selection, h3::selection {
+  background: #6a2653;
+  color: #fff;
+}
+
+a:hover{
+  color: #6a2653;
+}
+
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 100%;
+  text-align: right;
+
+
+}
+
+.logotext {
+  font-family: 'Raleway', sans-serif;
+  font-weight:900;
+  letter-spacing: 1px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.logoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+
+.logo a img{
+  width: 50%;
+
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  font-size: 1em;
+  color: black;
+
+
+}
+
+
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(255, 41, 130);
+  background: linear-gradient(130deg, rgba(106, 38,83, 1) 20%, rgba(96, 167, 163, 1) 100%);
+
+
+
+
+
+}
+
+.first-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 1100px;
+  height: 650px;
+  margin-top: 90px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+
+
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 60%;
+  height: 100%;
+  color: white;
+  padding: 20px;
+  text-align: justify;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+
+
+}
+
+.text h3, .second-section h1 {
+  border-bottom: 1px solid rgb(240, 233, 233);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.img, .img2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+
+}
+
+.img img, .img2 img {
+  width: 100%;
+  height: auto;
+  position: center;
+  max-width: inherit;
+
+}
+
+.second-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+
+}
+
+.second-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+  z-index: -1;
+  background: url("img/tools.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.second-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1500px;
+}
+
+
+
+.card1, .card2, .card3, .card4 {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 700px;
+  height: 420px;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 20px #7f7f7f;
+  box-shadow: 0 0 20px #7f7f7f;
+
+
+}
+
+.third-section {
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 60px;
+  background: rgba(106, 38,83, 0.9);
+  color: #fff;
+
+}
+
+.third-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.topcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bottomcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.minitextdiv {
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  justify-content: center;
+  width: 300px;
+  height: 160px;
+}
+
+
+.fourth-section {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.fourth-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    z-index: -1;
+    background: url("img/tools2top.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.fourth-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 700px;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+.fourth-topcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+  color: white;
+  padding: 20px 50px 20px 50px;
+}
+
+.topcard-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 40%;
+  text-align:justify;
+}
+
+.topcard-info {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+
+
+
+}
+
+.topcard-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 30%;
+  border: 1px solid rgb(240, 233, 233);
+}
+
+.fourth-bottomcard {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+:focus {
+  outline: 0;
+}
+
+form{
+  padding: 40px;
+  width: 500px;
+  color: rgba(255, 255, 255, 0.8);
+
+}
+
+.form-row {
+  margin-bottom: 20px;
+
+
+}
+
+.form-row > label{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 20px;
+
+
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"], select,textarea, button {
+  width: 100%;
+  border-radius: 15px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  font-family: inherit;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: rgb(175, 175, 175);
+
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+textarea:focus, select:focus {
+
+  border-color: rgba(0,0,0, 0.8);
+  border-radius: 20px;
+
+
+}
+
+textarea{
+  height: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 60px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: rgba(68,176,255, 0.8);
+  margin-top: 20px;
+}
+
+button[type="reset"] {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+.fifth-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.leftcard, .rightcard {
+  width: 40%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  border-bottom: 1px solid rgb(240, 233, 233);
+  text-align: center;
+}
+
+.adress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  height: 100%;
+}
+
+.fab {
+  color: #fff;
+  font-size: 30px;
+}
+
+.fa-facebook-square:hover {
+  color: #1873EB;
+
+}
+
+.fa-instagram-square:hover {
+  color: #FF583D;
+
+}
+
+.fa-twitter-square:hover {
+  color: #03AAF4;
+
+}
+
+.copyright {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .navbar-list{
+    width: 900px;
+    font-size: 0.7em;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  .logo a img{
+    width: 70%;
+  }
+
+  .first-card {
+    width: 900px;
+    height: 530px;
+  }
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .card1 .text, .card2 .text, .card3 .text, .card4 .text {
+    font-size: 1rem;
+  }
+
+  .third-card {
+    width: 900px;
+  }
+
+  .fourth-card {
+    width: 900px;
+  }
+  .fourth-topcard {
+    font-size: 0.8em;
+  }
+  .topcard-contact {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width:769px) and (max-width:959px) {
+
+.navbar-list{
+  width: 700px;
+
+
+}
+.logo {
+  width: 210px;
+}
+.logo a img{
+  width: 70%;
+}
+
+.logotext {
+  font-size: 0.7rem;
+}
+
+.first-card {
+  width: 600px;
+  height: 350px;
+}
+.text {
+  font-size: .6rem;
+}
+
+.card1, .card2, .card3, .card4 {
+  width: 600px;
+  height: 350px;
+}
+
+.card1 .text, .card2 .text, .card3 .text, .card4 .text {
+  font-size: 1rem;
+}
+
+.third-card {
+  width: 700px;
+}
+
+.fourth-card {
+  width: 750px;
+  height: 800px;
+
+}
+.fourth-topcard {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.topcard-text {
+  text-align: center;
+}
+.topcard-contact {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.form-row {
+  width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 769px) {
+  .nav1{
+    display: none;
+  }
+
+  .first-card {
+    width: 680px;
+    height: 400px;
+  }
+  .text {
+    font-size: .7rem;
+  }
+
+.card1, .card2, .card3, .card4 {
+    width: 500px;
+    height: 300px;
+  }
+
+.card1 .text, .card2 .text, .card3 .text, .card4 .text {
+  font-size: 0.7rem;
+}
+
+.third-card {
+  width: 600px;
+}
+
+.fourth-section {
+  height: 1000px;
+}
+
+.fourth-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  flex-direction:column;
+  height: 900px;
+
+}
+.fourth-topcard {
+  font-size: 0.8em;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+}
+
+.topcard-text {
+  text-align: center;
+}
+.topcard-contact {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.fourth-bottomcard {
+  height: 50%;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 20px;
+
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-row {
+  width: 45%;
+}
+
+textarea{
+  height: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 42px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 30px;
+}
+
+.socialmedia {
+  width: 70%;
+}
+
+
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+.hamburger {
+  width: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  visibility: visible;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 20px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  width: 769px;
+  height: 120px;
+  margin: -100px 0 0 -50px;
+  padding: 20px;
+  padding-top: 60px;
+  padding-left: 100px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(0%, -100%);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+}
